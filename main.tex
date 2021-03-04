@@ -1,0 +1,53 @@
+\documentclass[a4paper,12pt]{article}
+
+\input{./settings.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%%%%%%%%%  Title
+\input{./tex/title.tex}
+
+%%%%%%%%%  Introduction
+\newpage
+
+\setlength\parskip{.5cm} % it is not considered if inside settings.tex
+
+\input{./tex/introduction.tex}
+
+%%%%%%%%%  Results
+\newpage
+\input{./tex/results.tex}
+
+%%%%%%%%%  Discussion
+\newpage
+\input{./tex/discussion.tex}
+
+%%%%%%%%%%%%%% Acknowledgements
+\newpage
+\input{./tex/acknowledgements.tex}
+
+%%%%%%%%%%%%%% Author Contributions
+\input{./tex/contributions.tex}
+
+%%%%%%%%%%%%%% Declaration of interests
+\input{./tex/interests.tex}
+
+%%%%%%%%%  Figure Legends
+\newpage
+\input{./tex/figures.tex}
+
+%%%%%%%%%  Methods
+\newpage
+\input{./tex/methods.tex}
+
+%%%%%%%%%  Supplementary
+\newpage
+\input{./tex/supp.tex}
+
+%%%%%%%%%%%%%%   References
+\newpage
+\bibliographystyle{apalike}
+\bibliography{./library}
+
+\end{document}

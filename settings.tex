@@ -1,0 +1,47 @@
+% packages
+
+% for tables not overflowing pages
+\usepackage{tabularx, booktabs, ragged2e}
+\newcolumntype{L}{>{\RaggedRight\arraybackslash}X}
+
+\usepackage{graphicx}
+\usepackage[english]{babel} % option es-lcroman for lower case roman numbers
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage{float}
+\usepackage[labelfont=bf, textfont=normal,
+			justification=justified,
+			singlelinecheck=false]{caption}
+\usepackage[labelfont=bf, textfont=normal,  justification=justified, singlelinecheck=false]{subcaption}
+\usepackage[caption2]{ccaption} % caption in different pages
+\usepackage{multirow}
+\usepackage{amsmath}
+
+\usepackage{multicol}
+\usepackage[table]{xcolor} %paint cells with \cellcolor{red}
+\usepackage{hyperref} % insert liks in and outside of document with \href{<my_url>}{<description>} command. More functionalities available.
+\hypersetup{colorlinks, citecolor=black,
+   		 	filecolor=black, linkcolor=black,
+    		urlcolor=black}
+%\usepackage[version=4]{mhchem} % Chemical reactions graphics
+\usepackage{authblk} % add authors and affiliations
+
+\usepackage{seqsplit} % package for splitting long strings of characters link, DNA, mRNA, Proteins, numbers, etc.
+
+\usepackage{natbib} % take out square brackets from apalike citation
+
+% Add notes to pdf	
+\usepackage{todonotes}
+\presetkeys{todonotes}{inline}{}
+
+% Programming languages
+%\usepackage[]{mcode} % MatLab Code. Copy mcode.sty https://www.sharelatex.com/project/5539017293616a9c19e2cd24
+%\usepackage{listings} % Include several languages (Ex: Python)
+
+% Page Settings
+
+\usepackage[top=2cm, bottom=2cm, inner=1.5cm, outer=1.5cm]{geometry}
+
+\newcommand{\ening}[1]{\textit{#1}}
+\newcommand{\inst}[1]{$^{#1}$}
+\newcommand{\otherauthor}[1]{\textit{#1}}
